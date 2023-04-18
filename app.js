@@ -39,25 +39,25 @@ function reiniciarBolillas() {
     bolillasSacadas.splice(0, bolillasSacadas.length)
 }
 function showBolillas() {
-
     const contentBolillas = document.querySelector('.content-bolillas')
     
     for(let i=0; i<5; i++) {
-        for(let j=cambios[i]; j<cambios[i]+15; i++) {
+        for(let j=cambios[i]; j<cambios[i]+15; j++) {
             const div = document.createElement('DIV')
             const parrafo = document.createElement('p')
             if(j == cambios[i]) {
+                const div = document.createElement('DIV')
+                const parrafo = document.createElement('p')
+                div.classList.add(letrasBingo[i])
                 parrafo.textContent = letrasBingo[i]
                 div.appendChild(parrafo)
                 contentBolillas.appendChild(div)
-                continue
             }
-            div.classList.add('b-'+i)
-            parrafo.textContent = i
+            div.classList.add('b-'+j)
+            parrafo.textContent = j
     
-            div.append(parrafo)
+            div.appendChild(parrafo)
             contentBolillas.appendChild(div)
-
         }
     }
 }
