@@ -44,23 +44,8 @@
     background-color: yellow;
 }
 
-.B p {
-    font-weight: bold;
-    font-size: 20px;
-}
-.I p {
-    font-weight: bold;
-    font-size: 20px;
-}
-.N p {
-    font-weight: bold;
-    font-size: 20px;
-}
-.G p {
-    font-weight: bold;
-    font-size: 20px;
-}
-.O p {
+.B p, .I p, .N p, 
+.G p,.O p  {
     font-weight: bold;
     font-size: 20px;
 }
