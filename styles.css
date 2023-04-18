@@ -1,0 +1,30 @@
+.content {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.lado-derecho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.lado-derecho .text {
+    display: flex;
+    align-items: center;
+}
+
+.content-bolillas {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+.content-bolillas div p {
+    text-align: center;
+}
+.content-bolillas div {
+    border: 1px solid #000;
+}
+.select-bolilla {
+    border: 2px solid green !important;
+}
+
+
