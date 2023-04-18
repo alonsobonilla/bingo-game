@@ -41,15 +41,24 @@ function reiniciarBolillas() {
 function showBolillas() {
 
     const contentBolillas = document.querySelector('.content-bolillas')
-    for(let i=1; i<76; i++) {
-        const div = document.createElement('DIV')
-        const parrafo = document.createElement('p')
+    
+    for(let i=0; i<5; i++) {
+        for(let j=cambios[i]; j<cambios[i]+15; i++) {
+            const div = document.createElement('DIV')
+            const parrafo = document.createElement('p')
+            if(j == cambios[i]) {
+                parrafo.textContent = letrasBingo[i]
+                div.appendChild(parrafo)
+                contentBolillas.appendChild(div)
+                continue
+            }
+            div.classList.add('b-'+i)
+            parrafo.textContent = i
+    
+            div.append(parrafo)
+            contentBolillas.appendChild(div)
 
-        div.classList.add('b-'+i)
-        parrafo.textContent = i
-
-        div.append(parrafo)
-        contentBolillas.appendChild(div)
+        }
     }
 }
 
